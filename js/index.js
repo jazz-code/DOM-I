@@ -55,6 +55,9 @@ navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 //color
 navLinks.forEach(element => { element.style.color = 'green'});
+//header color
+let headerColor = document.querySelector('header')
+headerColor = headerColor.style.backgroundColor = 'lightgray';
 //append
 const navEl = document.querySelector('nav')
 const newChild = document.createElement('nav-item-7');
@@ -71,17 +74,23 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //------------cta
 const ctaText = document.querySelector('.cta-text h1')
 ctaText.textContent = siteContent['cta']['h1'];
+ctaText.style.color = 'green';
+//button
+const getStartedButton = document.querySelector('.cta-text button')
+getStartedButton.textContent = siteContent['cta']['button']
 //img
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent['cta']['img-src'])
 //----------Main Content
-//H4
+//h4
 const featuresH4 = document.querySelectorAll('.main-content h4');
 featuresH4[0].textContent = siteContent['main-content']['features-h4'];
 featuresH4[1].textContent = siteContent['main-content']['about-h4'];
 featuresH4[2].textContent = siteContent['main-content']['services-h4'];
 featuresH4[3].textContent = siteContent['main-content']['product-h4'];
 featuresH4[4].textContent = siteContent['main-content']['vision-h4'];
+//h4 color
+featuresH4.forEach(element => { element.style.color = 'green'})
 //P
 const featuresContent = document.querySelectorAll('.main-content p');
 featuresContent[0].textContent = siteContent['main-content']['features-content']
@@ -89,6 +98,8 @@ featuresContent[1].textContent = siteContent['main-content']['about-content']
 featuresContent[2].textContent = siteContent['main-content']['services-content']
 featuresContent[3].textContent = siteContent['main-content']['product-content']
 featuresContent[4].textContent = siteContent['main-content']['vision-content']
+//p color
+featuresContent.forEach(element => { element.style.backgroundColor = "lightgray"})
 //mid IMG
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
