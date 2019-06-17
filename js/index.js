@@ -53,6 +53,17 @@ navLinks[2].textContent = siteContent['nav']['nav-item-3'];
 navLinks[3].textContent = siteContent['nav']['nav-item-4'];
 navLinks[4].textContent = siteContent['nav']['nav-item-5'];
 navLinks[5].textContent = siteContent['nav']['nav-item-6'];
+//color
+navLinks.forEach(element => { element.style.color = 'green'});
+//append
+const navEl = document.querySelector('nav')
+const newChild = document.createElement('nav-item-7');
+newChild.textContent = "Append Child!"
+navEl.appendChild(newChild)
+//prepend
+const newChild2 = document.createElement('nav-item-8');
+newChild2.textContent = "Prepend Child!"
+navEl.prepend(newChild2)
 //logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
